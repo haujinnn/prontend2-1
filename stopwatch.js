@@ -8,7 +8,7 @@ let intervalId = 0,
     displayArr = display.innerText.split(':');
 
 function startBtnHandler() {
-  const startBtn = document.querySelector('.start-btn');
+  const startBtn = document.querySelector('.start');
 
   startBtn.addEventListener('click', () =>{
     intervalId = setInterval(() => {
@@ -35,7 +35,7 @@ function startBtnHandler() {
 }
 
 function stopBtnHandler() {
-  const stopBtn = document.querySelector('.stop-btn');
+  const stopBtn = document.querySelector('.stop');
   stopBtn.addEventListener('click', () => {
     clearInterval(intervalId);
   })
@@ -44,7 +44,7 @@ function stopBtnHandler() {
 }
 
 function resetBtnHandler() {
-  const resetBtn = document.querySelector('.reset-btn'),
+  const resetBtn = document.querySelector('.reset'),
         display = document.querySelector('#display');
   resetBtn.addEventListener('click', () => {
     display.innerText = `00:00`;
